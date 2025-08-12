@@ -1,11 +1,22 @@
 {
-  "name": "ui-kit",
+  "name": "@stevenwarner/ui-kit",
   "homepage": "https://stevewarner.github.io/ui-kit",
-  "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
+  "description": "React component library",
   "type": "module",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stevewarner/ui-kit.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "sideEffects": [
     "**/*.css"
   ],
@@ -27,6 +38,10 @@
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
     "@eslint/js": "^9.30.1",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^11.0.4",
+    "@semantic-release/npm": "^12.0.2",
     "@storybook/addon-docs": "^9.1.0",
     "@storybook/addon-onboarding": "^9.1.0",
     "@storybook/react-vite": "^9.1.0",
@@ -44,6 +59,7 @@
     "husky": "^9.1.7",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "semantic-release": "^24.2.7",
     "storybook": "^9.1.0",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.35.1",
