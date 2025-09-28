@@ -1,7 +1,7 @@
 {
   "name": "@stevenwarner/ui-kit",
   "homepage": "https://stevewarner.github.io/ui-kit",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "React component library",
   "type": "module",
   "main": "dist/main.js",
