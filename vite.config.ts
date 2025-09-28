@@ -5,11 +5,22 @@ import dts from 'vite-plugin-dts'
 import { libInjectCss } from 'vite-plugin-lib-inject-css'
 import { fileURLToPath } from 'node:url'
 import { glob } from 'glob'
+import svgr from "vite-plugin-svgr";
 
 // https://vite.dev/config/
 export default defineConfig({
+  resolve: {
+    alias: {
+      '@/svgs': resolve(__dirname, 'lib/svgs'),
+    },
+  },
   plugins: [
     react(),
+    svgr({
+  // svgr options: https://react-svgr.com/docs/options/
+  svgrOptions: { exportType: "default", ref: true, svgo: false, titleProp: true },
+   include: "**/*.svg",
+  }),
     libInjectCss(),
     dts({ include: ['lib'] })],
   build: {
