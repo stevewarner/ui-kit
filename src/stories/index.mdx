@@ -1,0 +1,66 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+
+import Github from "./assets/github.svg";
+import Discord from "./assets/discord.svg";
+import Youtube from "./assets/youtube.svg";
+import Tutorials from "./assets/tutorials.svg";
+import Styling from "./assets/styling.png";
+import Context from "./assets/context.png";
+import Assets from "./assets/assets.png";
+import Docs from "./assets/docs.png";
+import Share from "./assets/share.png";
+import FigmaPlugin from "./assets/figma-plugin.png";
+import Testing from "./assets/testing.png";
+import Accessibility from "./assets/accessibility.png";
+import Theming from "./assets/theming.png";
+import AddonLibrary from "./assets/addon-library.png";
+
+export const RightArrow = () => (
+  <svg
+    viewBox="0 0 14 14"
+    width="8px"
+    height="14px"
+    style={{
+      marginLeft: "4px",
+      display: "inline-block",
+      shapeRendering: "inherit",
+      verticalAlign: "middle",
+      fill: "currentColor",
+      "path fill": "currentColor",
+    }}
+  >
+    <path d="m11.1 7.35-5.5 5.5a.5.5 0 0 1-.7-.7L10.04 7 4.9 1.85a.5.5 0 1 1 .7-.7l5.5 5.5c.2.2.2.5 0 .7Z" />
+  </svg>
+);
+
+<Meta title="Steven Warner | UI Kit" />
+
+<div className="sb-container">
+  <div className='sb-section-title'>
+    # UI Kit
+    ### React Component Library
+
+    This is a simple React component library for customizable and versitile form elements. Props are extended from the base HTML element to allow form functionality (and to avoid prop hell). Bare minimum additional elements are added for accessibility (labels etc).
+
+<a
+        href="https://github.com/stevewarner/ui-kit"
+        target="_blank"
+      >Star on GitHub<RightArrow /></a>
+  </div>
+</div>
+
+<style>
+  {`
+  .sb-container {
+    margin-bottom: 48px;
+  }
+
+  .sb-section-title {
+    margin-bottom: 32px;
+  }
+
+  .sb-section a:not(h1 a, h2 a, h3 a) {
+    font-size: 14px;
+  }
+  `}
+</style>
