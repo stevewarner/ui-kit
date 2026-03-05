@@ -22,8 +22,8 @@ export default tseslint.config([
       ecmaVersion: 2020,
       globals: globals.browser,
     },
-    // rules: {
-
-    // }
+    rules: {
+      'react/no-unknown-property': ['error', { ignore: ['data-test'] }],
+    }
   },
 ], storybook.configs["flat/recommended"]);
